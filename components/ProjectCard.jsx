@@ -18,7 +18,7 @@ export default function ProjectCard({ project }){
                 <div className="flex justify-center flex-wrap gap-3 mt-2">
                     {project.techs.map((tech, i)=> (
                         <div key={i} className="w-8 h-8">
-                            <Image/>
+                            <Image src={tech} alt="techs" className="w-8 h-8"/>
                         </div>
                     ))}
                 </div>
