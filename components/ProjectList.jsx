@@ -10,14 +10,14 @@ const projectData = [
   {
     title: 'Mi portfolio',
     image: portfoliov2,
-    description: 'Este es el portfolio mostrado actualmente. Un projecto en desarrollo con React.JS, express.js y Tailwind CSS.',
+    description: 'Este es el portfolio mostrado actualmente. Un projecto en desarrollo con NextJs, express.js y Tailwind.',
     techs: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
     ],
     demoLink: '#',
-    codeLink: 'https://github.com/Artarexces/Portfolio-v01'
+    codeLink: 'https://github.com/Artarexces/PortfolioV03'
   },
   {
     title: 'Tu receta!',
@@ -68,13 +68,12 @@ const projectData = [
   },
   {
     title: 'Mi portfolio (v1)',
-    image: portfoliov1,
-    description: 'Version anterior a este portfolio, utilizando react y tailwind pero es una SPA.',
+    image: portfoliov2,
+    description: 'Version anterior a este portfolio, utilizando react, express y tailwind con GSAP pero es una SPA.',
     techs: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
     ],
     demoLink: '#',
     codeLink: 'https://github.com/Artarexces/Portfolio-v01'
