@@ -34,7 +34,7 @@ export default function Header(){
   return (
     <header className="mt-2 md:mt-6 mb-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Hola, Soy Martin <span className="inline-block">👋</span></h1>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Desarrollador<span className="text-sky-400">{text}</span></h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Desarrollador <span className="text-sky-400">{text}</span></h2>
     </header>
   )
 }
