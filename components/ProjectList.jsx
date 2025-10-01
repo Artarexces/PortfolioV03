@@ -1,28 +1,28 @@
-import portfoliov1 from '@/public/images/portfoliov1.png'
-import portfoliov2 from '@/public/images/portfoliov2.png'
+import ProjectCard from './ProjectCard'
+import portfolioV2 from '@/public/images/portfoliov2.png'
 import foodRecipe from '@/public/images/foodRecipe.png'
 import todo from '@/public/images/todo.png'
 import cloudy from '@/public/images/cloudy.jpg'
 import pomi from '@/public/images/pomi.png'
-import ProjectCard from '@/components/ProjectCard'
+import portfolioV1 from '@/public/images/portfoliov1.png'
 
 const projectData = [
   {
     title: 'Mi portfolio',
-    image: portfoliov2,
-    description: 'Este es el portfolio mostrado actualmente. Un projecto en desarrollo con NextJs, express.js y Tailwind.',
+    image: portfolioV2,
+    description: 'Portfolio actual (React, Express, Tailwind).',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'
     ],
     demoLink: '#',
-    codeLink: 'https://github.com/Artarexces/PortfolioV03'
+    codeLink: 'https://github.com/Artarexces/Portfolio-v01'
   },
   {
     title: 'Tu receta!',
     image: foodRecipe,
-    description: 'Mi primer app, simple, en la cual puedes elegir alimentos, combinarlos tambien da un puntaje nutricional.',
+    description: 'App para combinar alimentos y obtener puntaje.',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'
@@ -33,7 +33,7 @@ const projectData = [
   {
     title: 'To-Do-Now',
     image: todo,
-    description: 'Un task-list hecha 100% con python django, utilizando templates HTML y staticos CSS.',
+    description: 'Task-list hecha 100% con Django y templates',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
@@ -45,7 +45,7 @@ const projectData = [
   {
     title: 'Cloudy',
     image: cloudy,
-    description: 'Una app de clima hecha con React.js y express en donde aprendi a utilizar Tailwind CSS y GSAP.',
+    description: 'App de clima (React + Express).',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -57,7 +57,7 @@ const projectData = [
   {
     title: "Pom's",
     image: pomi,
-    description: 'Una app de estudio en la cual utiliza el metodo pomodoro mediante una interfaz sencilla, tambien version app-mobile.',
+    description: 'Timer Pomodoro, una app de estudio con intervalos de estudio y descanso',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -68,8 +68,8 @@ const projectData = [
   },
   {
     title: 'Mi portfolio (v1)',
-    image: portfoliov2,
-    description: 'Version anterior a este portfolio, utilizando react, express y tailwind con GSAP pero es una SPA.',
+    image: portfolioV2,
+    description: 'Versión anterior con React, tailwind y express ',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -80,10 +80,10 @@ const projectData = [
   }
 ]
 
-export default function ProjectList(){
-    return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {projectData.map((project, index) => <ProjectCard key={index} project={project}/>)}
-        </div>
-    )
-} 
+export default function ProjectsList(){
+  return (
+    <div id="projects" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projectData.map((p, idx) => <ProjectCard key={idx} project={p} />)}
+    </div>
+  )
+}

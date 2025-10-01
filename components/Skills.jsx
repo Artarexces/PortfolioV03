@@ -42,7 +42,7 @@ export default function Skills(){
                     <div className="flex flex-wrap justify-center gap-4">
                         {cat.icons.map((icon, i)=> (
                             <div key={i} className="w-12 h-12 p-1 rounded-lg bg-slate-900 flex items-center justify-center hover:scale-110 transition">
-                                <Image src={icon.src} alt={icon.alt} className="w-10 h-10"/>
+                                <Image src={icon.src} alt={icon.alt} width={40} height={40}/>
                             </div>
                         ))}
                     </div>
