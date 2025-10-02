@@ -1,25 +1,27 @@
 import Image from "next/image"
 import { FaGithub } from "react-icons/fa"
 import { VscVmConnect } from "react-icons/vsc"
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 export default function ProjectCard({ project }) {
   return (
-    <article className="bg-slate-800 rounded-xl overflow-hidden shadow-md hover:scale-105 transform transition-transform duration-200 flex flex-col">
+    <CardContainer className="group" style ={{ perspective: "1000px"}}>
+    <CardBody className="bg-slate-800 rounded-xl overflow-hidden shadow-md flex flex-col">
       
-      {/* Imagen fija */}
-      <div className="relative w-full h-48 blur-xs hover:blur-none transition">
+      {/* Imagen */}
+      <CardItem translateZ={50} className="w-full">
+      <div className="relative w-full h-48">
         <Image
           src={project.image}
           alt={project.title}
           fill
           className="object-cover"
-        />
+          />
       </div>
+      </CardItem>
 
-      {/* Contenido uniforme */}
-      <div className="flex flex-col flex-grow p-4">
-        
-        {/* Título + botones */}
+      {/* Contenido  */}
+      <CardItem translateZ={20} className="p-4 flex flex-col flex-grow">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-lg font-semibold text-cyan-300">
             {project.title}
@@ -29,24 +31,24 @@ export default function ProjectCard({ project }) {
               href={project.demoLink}
               target="_blank"
               rel="noreferrer"
-              title="Demo"
+              title="Ver proyecto"
               className="p-1 hover:text-cyan-400"
             >
-              <VscVmConnect />
+              <VscVmConnect className="w-7 h-7" />
             </a>
             <a
               href={project.codeLink}
               target="_blank"
               rel="noreferrer"
-              title="Código"
+              title="Ver codigo"
               className="p-1 hover:text-cyan-400"
             >
-              <FaGithub />
+              <FaGithub className="w-7 h-7" />
             </a>
           </div>
         </div>
 
-        {/* Descripción (altura mínima para uniformidad) */}
+        {/* Descripción */}
         <p className="text-sm text-slate-300 mb-4 min-h-[48px]">
           {project.description}
         </p>
@@ -62,7 +64,8 @@ export default function ProjectCard({ project }) {
             />
           ))}
         </div>
-      </div>
-    </article>
+      </CardItem>
+    </CardBody>
+    </CardContainer>
   )
 }

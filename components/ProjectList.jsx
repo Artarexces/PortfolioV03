@@ -10,7 +10,7 @@ const projectData = [
   {
     title: 'Mi portfolio',
     image: portfolioV2,
-    description: 'Portfolio actual (React, Express, Tailwind).',
+    description: 'Portfolio actual Desarollado con react-router, tailwind + animaciones y express para el back-end',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -22,7 +22,7 @@ const projectData = [
   {
     title: 'Tu receta!',
     image: foodRecipe,
-    description: 'App para combinar alimentos y obtener puntaje.',
+    description: 'App para combinar alimentos y obtener puntaje fue uno de mis primero proyectos en la utn.',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'
@@ -33,7 +33,7 @@ const projectData = [
   {
     title: 'To-Do-Now',
     image: todo,
-    description: 'Task-list hecha 100% con Django y templates',
+    description: 'Task-list hecha 100% con Django, utilizando HTML Y CSS como templates',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
@@ -45,7 +45,7 @@ const projectData = [
   {
     title: 'Cloudy',
     image: cloudy,
-    description: 'App de clima (React + Express).',
+    description: 'App de clima que tambien devuelve pronostico semanal hecho con react y express.',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -69,7 +69,7 @@ const projectData = [
   {
     title: 'Mi portfolio (v1)',
     image: portfolioV2,
-    description: 'Versión anterior con React, tailwind y express ',
+    description: 'Versión anterior con React, tailwind y express en donde tambien utilize GSAP.',
     techs: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
