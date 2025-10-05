@@ -5,9 +5,9 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState(null)
-  const [navHeight, setNavHeight] = useState(80) // fallback si no encuentra nav
+  const [navHeight, setNavHeight] = useState(80) 
 
-  // Medimos navbar (intenta primero por id, si no, por querySelector)
+
   useEffect(() => {
     const measure = () => {
       const nav = document.getElementById('site-navbar') || document.querySelector('nav')
