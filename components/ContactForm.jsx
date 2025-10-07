@@ -24,7 +24,7 @@ export default function ContactForm() {
     return () => { window.removeEventListener('resize', measure); obs.disconnect() }
   }, [])
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/contacto` : null
+  const API_URL = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api/contacto` : null
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
