@@ -18,6 +18,12 @@ export default function ProjectCard({ project }) {
           className="object-cover"
           />
       </div>
+      <a 
+        href={project.demoLink} 
+        target="_blank" 
+        rel="noreferrer"
+        className="absolute inset-x-0 top-0 h-48 z-50"
+        />
       </CardItem>
 
       {/* Contenido  */}

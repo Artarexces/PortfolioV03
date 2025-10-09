@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex-1">
         <Header />
         <p className="text-lg text-slate-300 max-w-xl leading-relaxed mb-6">
-          Desarrollador web full-stack. Trabajo con tecnologias como React/next/Tailwind y APIs con Express/Nest. Acá está la versión Next.js de mi portfolio.
+          Desarrollador web full-stack. Trabajo con tecnologias como React/NextJs/TailwindCSS y API's con Express/NestJs.
         </p>
 
         <div className="flex gap-3">
