@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✨ PortfolioV03 (Frontend)
 
-## Getting Started
+Remake de mi portfolio personal con **Next.js** y un enfoque renovado en diseño y rendimiento.  
+Este repo contiene la parte **frontend** del proyecto — interfaz, componentes y estilos — listo para desplegar en Vercel.
 
-First, run the development server:
+---
+
+## 🔎 Descripción rápida
+
+Portfolio construido con el **App Router de Next.js** para aprovechar renderizado híbrido y buenas prácticas modernas de React. La estructura principal usa la carpeta `app/` y componentes reutilizables para mantener el proyecto escalable. 
+
+---
+
+## ⚙️ Tecnologías principales
+
+- ▲ **Next.js** (App Router) — estructura y routing de la app.
+- ⚛️ **React** (hooks y componentes)  
+- 🎨 **TailwindCSS** / utilidades (estilos globales en `globals.css`)  
+- 🅰️ Fuente optimizada vía `next/font` (Geist).
+
+---
+
+## 📁 Estructura del proyecto (resumen)
 
 ```bash
+PortfolioV03/
+ ├── app/              # Páginas y layout (App Router)
+ ├── components/       # Componentes reutilizables
+ ├── public/ images/    # Imágenes y assets públicos
+ ├── styles/           # CSS global / módulos
+ ├── package.json
+ └── README.md
+```
+--- 
+
+## 🚀 Instalación y ejecución local
+
+1. Clonar el repo:
+```bash
+git clone https://github.com/Artarexces/PortfolioV03.git
+cd PortfolioV03
+```
+2. Instalar dependencias:
+```bash
+npm install
+```
+3. Ejecutar en modo desarrollo:
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+4. Abrir en el navegador:
+```arduino
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Los comandos de desarrollo se corresponden con los scripts estándar de Next.js presentes en package.json.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Componentes clave
 
-## Learn More
+- Navbar — navegación y toggle de modo oscuro (si aplica)
 
-To learn more about Next.js, take a look at the following resources:
+- Header — hero con animación y llamado a la acción
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Projects — tarjetas de proyectos (cada tarjeta con título, techs, links a GitHub/demo)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Skills — lista / grid de tecnologías con iconos
 
-## Deploy on Vercel
+- Contact — formulario y/o botones de contacto (copiar email, enlaces a redes)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Footer — créditos y enlaces
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ✅ SEO, accesibilidad y rendimiento
+
+- Meta tags y Open Graph: agregar metadata por página para mejorar apariencia en compartidos y SEO.
+
+- Etiquetas ARIA y semántica (usar main, header, nav, footer) para accesibilidad.
+
+- Imágenes optimizadas: usar <Image /> de Next.js si corresponde para lazy-load y tamaño adaptativo.
+
+---
+
+## 🚀 Futuras mejoras (resumen)
+
+- 🌙 **Modo oscuro** — toggle simple con persistencia (localStorage).  
+- 🖼️ **Optimizar imágenes** — usar `<Image />` de Next.js para lazy-load.  
+- 🧭 **Meta / Open Graph** — mejorar título/descr/preview para redes.  
+- ♿ **Pequeñas mejoras de accesibilidad** — roles semánticos y navegación por teclado.
+
+--- 
+
+## 👨‍💻 Autor
+
+**Martin Rodriguez (Artarexces)**
+
+💼 [GitHub](https://github.com/Artarexces/PortfolioV03)
+
+🌐 [Portfolio](https://portfolio-v03-eight.vercel.app/)
