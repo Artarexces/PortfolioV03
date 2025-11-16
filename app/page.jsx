@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-12">
+    <section className="flex flex-col ml-26 mb-14 md:flex-row items-center gap-12">
       <div className="flex-1">
         <Header />
         <p className="text-lg text-slate-300 max-w-xl leading-relaxed mb-6">
